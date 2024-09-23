@@ -1,6 +1,6 @@
 # algorithm made and found by yosh, simply drag and drop your brsar on this python script, or type all of this in a terminal -> "[DND] brsar patcher.py" "my file.brsar"
-import os
 import sys
+import os
 
 
 def patch_brsar(file):
@@ -31,5 +31,6 @@ def patch_brsar(file):
 if len(sys.argv) < 2:  # if the brsar is not given
     input("please add your filename as argument when launching this script\nit's exactly what you make when doing drag and drop\npress enter to quit...\n")
     exit()  # exits the program
+print('Finding brstm links, please wait...\n remember that you can still do something else while this script runs :)')
 print(patch_brsar(sys.argv[1]))
 input("Press Enter to exit...")
